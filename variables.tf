@@ -16,10 +16,6 @@ variable "configuration" {
   type        = any
 }
 
-variable "azurerm_resource_group" {
-  description = "(Required) The Azure Resource Group resource."
-}
-
 variable "amount" {
   description = "(Required) The total amount of cost to track with the budget."
   type        = number
@@ -55,10 +51,4 @@ variable "override_name" {
   description = "(Optional) Override the name of the resource. Under normal circumstances, it should not be used."
   type        = string
   default     = null
-}
-
-variable "tags" {
-  description = "(Optional) A mapping of tags to assign to the resource."
-  type        = map(string)
-  default     = {}
 }
