@@ -20,10 +20,6 @@ variable "azurerm_resource_group" {
   description = "(Required) The Azure Resource Group resource."
 }
 
-variable "azurerm_monitor_action_group" {
-  description = "(Required) The Azure Monitor Action Group resource."
-}
-
 variable "amount" {
   description = "(Required) The total amount of cost to track with the budget."
   type        = number
